@@ -10,7 +10,7 @@ app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
 app.get('/', function(req, res) {
-	res.render('home', {title:'SR SHAW Exercise Handlebars'});
+	res.render('home', {title:'SR SHAW Exercise'});
 });
 
 //app.use(express.static(__dirname + '/public'));
