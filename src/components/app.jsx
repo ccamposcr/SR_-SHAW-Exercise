@@ -1,26 +1,25 @@
 import React, { Component } from 'react';
 
 class App extends Component{
+  constructor() {
+    super();
+    this.state = {
+      'items': []
+    }
+  }
+  componentDidMount() {
+    fetch('http://localhost:3000/js/data.json')
+      .then(results => results.json())
+      .then(results => this.setState({ 'items': results }));
+  }
   render(){
     return(
-      <span>{this.props.source.data}</span>
-      /*props.source.map(function(job) {
-          return (
-            <div key={job.url} className="job">
-              <a href={job.url}>
-                {job.company_name}
-                is looking for a
-                {job.term}
-                {job.title}
-              </a>
-            </div>
-          );
-        }),
       <ul>
-        {this.props.source.map(function(x, idx){
-          return (<li key={idx}>{d.title}</li>)
+        {this.state.items.map(function(item, index){
+          console.log(this.state.items);
+          return (<li>{item.title}</li>)
         })}
-      </ul>*/
+      </ul>
     )
   }
 }
