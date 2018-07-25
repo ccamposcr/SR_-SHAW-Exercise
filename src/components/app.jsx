@@ -1,22 +1,28 @@
 import React, { Component } from 'react';
 
 class App extends Component{
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
-      'items': []
+      sections: []
     }
   }
+
   componentDidMount() {
-    fetch('http://localhost:3000/js/data.json')
-      .then(results => results.json())
-      .then(results => this.setState({ 'items': results }));
+    this.fetchData();
   }
+
+  fetchData(){
+    fetch('http://localhost:3000/js/data.json')
+      .then((response) => response.json())
+      .then(results => this.setState({ sections: results.data.sections }));
+  }
+
   render(){
+    const {sections} = this.state;
     return(
       <ul>
-        {this.state.items.map(function(item, index){
-          console.log(this.state.items);
+        {sections.map(function(item, index){
           return (<li>{item.title}</li>)
         })}
       </ul>
