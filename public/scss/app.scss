@@ -1,6 +1,4 @@
-body{
-  background-color: red;
-  #app{
-    color: blue;
-  }
-}
+@import "_vars";
+@import "_mixins";
+
+@import "./components/_section-info";

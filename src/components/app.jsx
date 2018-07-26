@@ -21,11 +21,18 @@ class App extends Component{
   render(){
     const {sections} = this.state;
     return(
-      <ul>
-        {sections.map(function(item, index){
-          return (<li>{item.title}</li>)
-        })}
-      </ul>
+      <div class="section section--wrapper">
+      {sections.map(function(item, index){
+        return (
+          <div class="section--info">
+            <img class="section--info-img" src={item.url}/>
+            <h2 class="section--info-title">{item.title}</h2>
+            <h4 class="section--info-subtitle">{item.subtitle}</h4>
+            <p class="section--info-description">{item.description}</p>
+          </div>
+        );
+      })}
+      </div>
     )
   }
 }
