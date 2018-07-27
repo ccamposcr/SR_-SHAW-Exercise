@@ -19,6 +19,11 @@
         "subtitle": "Heading of this section",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
       }
+    ],
+    "banners":[
+      {
+        "description": "It's the next generation of location based networking"
+      }
     ]
   }
 }

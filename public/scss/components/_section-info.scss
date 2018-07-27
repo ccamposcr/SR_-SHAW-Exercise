@@ -1,6 +1,47 @@
-#app{
-  color: blue;
-}
-@media (min-width:$bp-normal) {
-  
+.section{
+  &--wrapper{
+    @media (min-width:$bp-normal) {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+  &--info{
+    padding: 3% 15%;
+    text-align: center;
+    @media (min-width:$bp-normal) {
+      padding: 0;
+      display: inline-block;
+      width: 26.6%;
+      &:nth-child(2){
+        margin: 0 10%;
+      }
+    }
+    &-img{
+      margin-bottom: 20px;
+    }
+    &-title{
+      margin-bottom: 15px;
+      font-size: 32px;
+      font-weight: normal;
+      color: $gray;
+      margin-top: 0;
+      @media (min-width:$bp-normal) {
+        font-size: 26px;
+      }
+    }
+    &-subtitle{
+      margin-bottom: 15px;
+      font-size: 18px;
+      color: $soft-gray;
+      font-weight: normal;
+      margin-top: 0;
+      @media (min-width:$bp-normal) {
+        font-size: 16px;
+      }
+    }
+    &-description{
+      font-size: 13px;
+      color: $medium-gray;
+    }
+  }
 }

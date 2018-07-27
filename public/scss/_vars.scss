@@ -1,14 +1,18 @@
-$bp-mobile:                               0 !default;
-$bp-mobile-only:                          599px !default; // should be 1px less than $tablet
+$bp-mobile:0 !default;
+$bp-mobile-only: 599px !default; // should be 1px less than $tablet
 
-$bp-small:                                600px !default;
-$bp-below-small:                          $bp-mobile-only !default;
+$bp-small: 600px !default;
+$bp-below-small: $bp-mobile-only !default;
 
-$bp-medium:                               768px !default;
-$bp-below-medium:                         767px !default;
+$bp-medium: 768px !default;
+$bp-below-medium: 767px !default;
 
-$bp-normal:                               960px !default;
-$bp-below-normal:                         959px !default;
+$bp-normal: 960px !default;
+$bp-below-normal: 959px !default;
 
-$bp-wide:                                 1440px !default;
-$bp-below-wide:                           1439px !default;
+$bp-wide: 1440px !default;
+$bp-below-wide: 1439px !default;
+
+$gray: #53453a;
+$soft-gray: #b0b2bf;
+$medium-gray: #979b9c;

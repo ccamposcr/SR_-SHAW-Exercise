@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { render } from 'react-dom';
 
-import App from './components/app.jsx';
+import SectionComponent from './components/sectionComponent.jsx';
 require('../public/scss/app.scss');
 render(
-  <App/>,
-  document.getElementById('app')
+  <SectionComponent/>,
+  document.getElementById('sectionComponent')
 );
