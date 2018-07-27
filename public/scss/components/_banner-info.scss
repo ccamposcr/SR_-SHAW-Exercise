@@ -1,0 +1,13 @@
+.banner{
+  &--wrapper{
+    background-color: $red;
+    text-align: center;
+    padding: 40px 0;
+  }
+  &--info{
+    &-description{
+      color: $white;
+      font-size: 16px;
+    }
+  }
+}

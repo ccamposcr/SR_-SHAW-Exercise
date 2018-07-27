@@ -25,7 +25,7 @@ class sectionComponent extends Component{
       {sections.map(function(item, index){
         return (
           <div class="section--info">
-            <img class="section--info-img" src={item.url}/>
+            <img class="section--info-img" src={item.icon}/>
             <h2 class="section--info-title">{item.title}</h2>
             <h4 class="section--info-subtitle">{item.subtitle}</h4>
             <p class="section--info-description">{item.description}</p>

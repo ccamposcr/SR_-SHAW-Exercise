@@ -2,19 +2,19 @@
   "data": {
     "sections": [
       {
-        "url": "https://dummyimage.com/40x40/ff0000/ffffff.jpg",
+        "icon": "https://dummyimage.com/40x40/c54b3c/ffffff.jpg",
         "title": "Section Title 1",
         "subtitle": "Heading of this section",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
       },
       {
-        "url": "https://dummyimage.com/40x40/ff0000/ffffff.jpg",
+        "icon": "https://dummyimage.com/40x40/c54b3c/ffffff.jpg",
         "title": "Section Title 2",
         "subtitle": "Heading of this section",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
       },
       {
-        "url": "https://dummyimage.com/40x40/ff0000/ffffff.jpg",
+        "icon": "https://dummyimage.com/40x40/c54b3c/ffffff.jpg",
         "title": "Section Title 2",
         "subtitle": "Heading of this section",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
@@ -24,6 +24,32 @@
       {
         "description": "It's the next generation of location based networking"
       }
-    ]
+    ],
+    "rows":{
+      "rowTitle":"See how it works",
+      "rows": [
+        {
+          "imagePosition":"right",
+          "icon": "https://dummyimage.com/30x30/c54b3c/ffffff.jpg",
+          "title": "Heading goes here",
+          "image": "https://dummyimage.com/260x300/ffffff/ffffff.jpg",
+          "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim."
+        },
+        {
+          "imagePosition":"left",
+          "icon": "https://dummyimage.com/30x30/c54b3c/ffffff.jpg",
+          "title": "Heading goes here",
+          "image": "https://dummyimage.com/260x300/ffffff/ffffff.jpg",
+          "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim."
+        },
+        {
+          "imagePosition":"right",
+          "icon": "https://dummyimage.com/30x30/c54b3c/ffffff.jpg",
+          "title": "Heading goes here",
+          "image": "https://dummyimage.com/260x300/ffffff/ffffff.jpg",
+          "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim."
+        }
+      ]
+    }
   }
 }
