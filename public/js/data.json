@@ -29,21 +29,21 @@
       "rowTitle":"See how it works",
       "rows": [
         {
-          "imagePosition":"right",
+          "imagePosition":"image--right",
           "icon": "https://dummyimage.com/30x30/c54b3c/ffffff.jpg",
           "title": "Heading goes here",
           "image": "https://dummyimage.com/260x300/ffffff/ffffff.jpg",
           "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim."
         },
         {
-          "imagePosition":"left",
+          "imagePosition":"image--left",
           "icon": "https://dummyimage.com/30x30/c54b3c/ffffff.jpg",
           "title": "Heading goes here",
           "image": "https://dummyimage.com/260x300/ffffff/ffffff.jpg",
           "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim."
         },
         {
-          "imagePosition":"right",
+          "imagePosition":"image--right",
           "icon": "https://dummyimage.com/30x30/c54b3c/ffffff.jpg",
           "title": "Heading goes here",
           "image": "https://dummyimage.com/260x300/ffffff/ffffff.jpg",

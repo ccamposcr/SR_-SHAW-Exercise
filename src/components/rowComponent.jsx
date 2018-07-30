@@ -28,12 +28,14 @@ class rowComponent extends Component{
       {rows.map(function(item, index){
         return (
           <div class="row--info">
-            <div class="column--info">
-              <h2 class="row--info-title"><img class="row--info-icon" src={item.icon}/>{item.title}</h2>
-              <p class="section--info-description">{item.description}</p>
-            </div>
-            <div class="column--image">
-              <img class="row--info-img" src={item.image}/>
+            <div className={item.imagePosition}>
+              <div class="column--info">
+                <h2 class="row--info-title"><img class="row--info-icon" src={item.icon}/>{item.title}</h2>
+                <p class="row--info-description">{item.description}</p>
+              </div>
+              <div class="column--image">
+                <img class="row--info-img" src={item.image}/>
+              </div>
             </div>
           </div>
         );
