@@ -26,10 +26,17 @@ class heroComponent extends Component{
           <img class="hero--logo" src={hero.logo}/>
           <h4 class="hero--logo-title">{hero.logoTitle}</h4>
           <h2 class="hero--subtitle">{hero.logoSubtitle}</h2>
-          <h5 class="hero--title">{hero.title}</h5>
-          <p class="hero--description">{hero.description}</p>
-          <a href="#"><img class="hero--googlePlay" src={hero.googlePlay}/></a>
-          <a href="#"><img class="hero--appStore" src={hero.appStore}/></a>
+          <div class="hero--social-icons">
+            <img class="hero--social-mail" src={hero.mailIcon}/>
+            <img class="hero--social-facebook" src={hero.facebookIcon}/>
+            <img class="hero--social-twitter" src={hero.twitterIcon}/>
+          </div>
+          <div class="hero--bottom">
+            <h5 class="hero--title">{hero.title}</h5>
+            <p class="hero--description">{hero.description}</p>
+            <a href="#"><img class="hero--googlePlay" src={hero.googlePlay}/></a>
+            <a href="#"><img class="hero--appStore" src={hero.appStore}/></a>
+          </div>
         </div>
       </div>
     )

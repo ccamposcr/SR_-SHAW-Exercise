@@ -56,6 +56,9 @@
     },
     "hero": {
       "bgImage": "http://localhost:3000/img/hero.jpg",
+      "mailIcon": "http://localhost:3000/img/email_icon.jpg",
+      "facebookIcon": "http://localhost:3000/img/facebook_icon.jpg",
+      "twitterIcon": "http://localhost:3000/img/twitter_icon.jpg",
       "logo": "https://dummyimage.com/40x40/ffffff/ffffff.jpg",
       "logoTitle":"Introducing",
       "logoSubtitle":"TinyLove",
