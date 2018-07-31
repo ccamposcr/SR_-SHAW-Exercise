@@ -4,6 +4,10 @@
   padding-bottom: 30px;
   &--wrapper{
     background-color: $red;
+    padding: 0 15px;
+    @media (min-width:$bp-normal) {
+      padding: 0;
+    }
     label{
       color: $white;
       display: block;
