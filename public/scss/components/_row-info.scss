@@ -27,12 +27,6 @@
     &:nth-of-type(3){
       background-color: $medium-gray;
     }
-    .column--info{
-
-    }
-    .column--image{
-
-    }
     &-icon{
       display: block;
       margin: 0 auto 15px auto;
@@ -52,13 +46,17 @@
       font-size: 14px;
     }
     &-img{
-
+      width: 100%;
+      @media (min-width:$bp-small) {
+        max-width: 260px;
+      }
     }
     &-description{
       color: $white;
-      font-size: 14px;
+      font-size: 13px;
       line-height: 22px;
       margin-bottom: 30px;
+      font-weight: lighter;
     }
     .column--info{
       @media (min-width:$bp-normal) {

@@ -2,12 +2,15 @@
   &--wrapper{
     background-color: $red;
     text-align: center;
-    padding: 40px 0;
+    padding: 40px 15px;
   }
   &--info{
     &-description{
       color: $white;
-      font-size: 16px;
+      font-size: 20px;
+      font-weight: lighter;
+      display: block;
+      line-height: 30px;
     }
   }
 }

@@ -55,16 +55,14 @@
       "formTitle": "Get in touch"
     },
     "hero": {
-      "logo": "https://dummyimage.com/40x40/c54b3c/ffffff.jpg",
+      "bgImage": "http://localhost:3000/img/hero.jpg",
+      "logo": "https://dummyimage.com/40x40/ffffff/ffffff.jpg",
       "logoTitle":"Introducing",
       "logoSubtitle":"TinyLove",
-      "facebook":"",
-      "twitter":"",
       "title": "Enticing statement goes here.",
       "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.",
-      "googlePlay": "",
-      "appStore":"",
-      "backgroundImage":""
+      "googlePlay": "https://play.google.com/intl/en_us/badges/images/badge_new.png",
+      "appStore":"https://devimages-cdn.apple.com/app-store/marketing/guidelines/images/badge-example-preferred.png"
     }
   }
 }
