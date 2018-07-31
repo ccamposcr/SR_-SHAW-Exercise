@@ -22,10 +22,6 @@ module.exports = {
         }, {
             loader: "sass-loader"
         }]
-      },
-      {
-        test:/\.(png|jpg|jpeg|gif)$/,
-        loader: 'file-loader'
       }
       /*{
         test: /\.scss$/,
