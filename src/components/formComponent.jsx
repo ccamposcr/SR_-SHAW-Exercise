@@ -61,10 +61,10 @@ class formComponent extends Component{
       <div class="form--wrapper">
         <h2 class="form--title">{form.formTitle}</h2>
         <form onSubmit={this.handleSubmit} class="form">
-          <label>Name:*</label><input type="text" class="form--name" value={this.state.name} onChange={this.handleNameChange}/>
-          <label>Email Address:*</label><input type="text" class="form--email" value={this.state.email} onChange={this.handleEmailChange}/>
-          <label>Subject:*</label><input type="text" class="form--subject" value={this.state.subject} onChange={this.handleSubjectChange}/>
-          <label>Message:*</label><textarea value={this.state.message} class="form--message" onChange={this.handleMessageChange}></textarea>
+          <label for="name">Name:*</label><input id="name" name="name" type="text" class="form--name" value={this.state.name} onChange={this.handleNameChange}/>
+          <label for="email">Email Address:*</label><input id="email" name="email" type="text" class="form--email" value={this.state.email} onChange={this.handleEmailChange}/>
+          <label for="subject">Subject:*</label><input id="subject" name="subject" type="text" class="form--subject" value={this.state.subject} onChange={this.handleSubjectChange}/>
+          <label for="message">Message:*</label><textarea id="message" name="message" value={this.state.message} class="form--message" onChange={this.handleMessageChange}></textarea>
           <input class="form--submit" type="submit" value="Submit"/>
         </form>
       </div>

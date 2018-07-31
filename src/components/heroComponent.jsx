@@ -23,19 +23,19 @@ class heroComponent extends Component{
     return(
       <div class="hero hero--wrapper" style={{backgroundImage:"url("+hero.bgImage+")"}}>
         <div class="hero--bg-overlay">
-          <img class="hero--logo" src={hero.logo}/>
+          <img alt="Hero Logo" class="hero--logo" src={hero.logo}/>
           <h4 class="hero--logo-title">{hero.logoTitle}</h4>
           <h2 class="hero--subtitle">{hero.logoSubtitle}</h2>
           <div class="hero--social-icons">
-            <img class="hero--social-mail" src={hero.mailIcon}/>
-            <img class="hero--social-facebook" src={hero.facebookIcon}/>
-            <img class="hero--social-twitter" src={hero.twitterIcon}/>
+            <img alt="Mail Icon" class="hero--social-mail" src={hero.mailIcon}/>
+            <img alt="Facebook Icon" class="hero--social-facebook" src={hero.facebookIcon}/>
+            <img alt="Twitter Icon" class="hero--social-twitter" src={hero.twitterIcon}/>
           </div>
           <div class="hero--bottom">
             <h5 class="hero--title">{hero.title}</h5>
             <p class="hero--description">{hero.description}</p>
-            <a href="#"><img class="hero--googlePlay" src={hero.googlePlay}/></a>
-            <a href="#"><img class="hero--appStore" src={hero.appStore}/></a>
+            <a href="#"><img alt="Google Play" class="hero--googlePlay" src={hero.googlePlay}/></a>
+            <a href="#"><img alt="App Store" class="hero--appStore" src={hero.appStore}/></a>
           </div>
         </div>
       </div>

@@ -30,12 +30,12 @@ class rowComponent extends Component{
           <div class="row--info">
             <div className={item.imagePosition}>
               <div class="column--info">
-                <img class="row--info-icon" src={item.icon}/>
+                <img alt="Icon" class="row--info-icon" src={item.icon}/>
                 <h2 class="row--info-title">{item.title}</h2>
                 <p class="row--info-description">{item.description}</p>
               </div>
               <div class="column--image">
-                <img class="row--info-img" src={item.image}/>
+                <img alt="Image" class="row--info-img" src={item.image}/>
               </div>
             </div>
           </div>
