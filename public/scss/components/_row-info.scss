@@ -6,6 +6,9 @@
     padding-top: 20px;
     margin: 0;
     text-align: center;
+    @media (min-width:$bp-normal) {
+      padding-top: 35px;
+    }
   }
 
   &--info{
