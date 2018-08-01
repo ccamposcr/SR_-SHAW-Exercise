@@ -8,7 +8,7 @@
     "dev": "concurrently \"node server.js\" \"webpack -w\" "
   },
   "keywords": [],
-  "author": "",
+  "author": "Christian Campos Olivares",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.3",
