@@ -7,23 +7,12 @@ class formComponent extends Component{
       name: '',
       email: '',
       subject: '',
-      message: '',
-      form: ''
+      message: ''
     };
     this.handleSubmit.bind(this);
     this.handleNameChange.bind(this);
     this.handleEmailChange.bind(this);
     this.handleMessageChange.bind(this);
-  }
-
-  componentDidMount() {
-    this.fetchData();
-  }
-
-  fetchData(){
-    fetch('http://localhost:3000/js/data.json')
-      .then((response) => response.json())
-      .then(results => this.setState({ form: results.data.form }));
   }
 
   handleNameChange(event){
@@ -56,10 +45,9 @@ class formComponent extends Component{
   }
 
   render(){
-    const {form} = this.state;
     return(
       <div class="form--wrapper">
-        <h2 class="form--title">{form.formTitle}</h2>
+        <h2 class="form--title">{this.props.form.formTitle}</h2>
         <form onSubmit={this.handleSubmit} class="form">
           <label for="name">Name:*</label><input id="name" name="name" type="text" class="form--name" value={this.state.name} onChange={this.handleNameChange}/>
           <label for="email">Email Address:*</label><input id="email" name="email" type="text" class="form--email" value={this.state.email} onChange={this.handleEmailChange}/>

@@ -3,26 +3,12 @@ import React, { Component } from 'react';
 class sectionComponent extends Component{
   constructor(props) {
     super(props);
-    this.state = {
-      sections: []
-    }
-  }
-
-  componentDidMount() {
-    this.fetchData();
-  }
-
-  fetchData(){
-    fetch('http://localhost:3000/js/data.json')
-      .then((response) => response.json())
-      .then(results => this.setState({ sections: results.data.sections }));
   }
 
   render(){
-    const {sections} = this.state;
     return(
       <div class="section section--wrapper">
-      {sections.map(function(item, index){
+      {this.props.sections.map(function(item, index){
         return (
           <div class="section--info">
             <img alt="Icon" class="section--info-img" src={item.icon}/>
