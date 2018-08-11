@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { render } from 'react-dom';
 
-import App from './app.jsx';
+import App from './App.jsx';
 
 render(
   <App/>,
-  document.getElementById('app')
+  document.getElementById('App')
 );
