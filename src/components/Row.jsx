@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class rowComponent extends Component{
+class Row extends Component{
   constructor(props) {
     super(props);
   }
@@ -30,4 +30,4 @@ class rowComponent extends Component{
   }
 }
 
-export default rowComponent;
+export default Row;

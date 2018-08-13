@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class sectionComponent extends Component{
+class Section extends Component{
   constructor(props) {
     super(props);
   }
@@ -23,4 +23,4 @@ class sectionComponent extends Component{
   }
 }
 
-export default sectionComponent;
+export default Section;

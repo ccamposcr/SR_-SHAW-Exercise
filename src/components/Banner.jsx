@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class bannerComponent extends Component{
+class Banner extends Component{
   constructor(props) {
     super(props);
   }
@@ -14,4 +14,4 @@ class bannerComponent extends Component{
   }
 }
 
-export default bannerComponent;
+export default Banner;

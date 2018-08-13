@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import { render } from 'react-dom';
 
-import HeroComponent from './components/heroComponent.jsx';
-import SectionComponent from './components/sectionComponent.jsx';
-import BannerComponent from './components/bannerComponent.jsx';
-import RowComponent from './components/rowComponent.jsx';
-import FormComponent from './components/formComponent.jsx';
+import Hero from './components/Hero.jsx';
+import Section from './components/Section.jsx';
+import Banner from './components/Banner.jsx';
+import Row from './components/Row.jsx';
+import Form from './components/Form.jsx';
 require('../public/scss/app.scss');
 
 class App extends Component{
@@ -40,11 +40,11 @@ class App extends Component{
   render(){
     return(
       <div>
-        <HeroComponent hero={this.state.hero}/>
-        <SectionComponent sections={this.state.sections}/>
-        <BannerComponent banner={this.state.banner}/>
-        <RowComponent title={this.state.rowTitle} rows={this.state.rows}/>
-        <FormComponent form={this.state.form}/>
+        <Hero hero={this.state.hero}/>
+        <Section sections={this.state.sections}/>
+        <Banner banner={this.state.banner}/>
+        <Row title={this.state.rowTitle} rows={this.state.rows}/>
+        <Form form={this.state.form}/>
       </div>
     );
   }
