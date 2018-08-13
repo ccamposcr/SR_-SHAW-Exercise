@@ -6,6 +6,7 @@ import Section from './components/Section.jsx';
 import Banner from './components/Banner.jsx';
 import Row from './components/Row.jsx';
 import Form from './components/Form.jsx';
+import store from './store.jsx';
 require('../public/scss/app.scss');
 
 class App extends Component{
@@ -22,19 +23,15 @@ class App extends Component{
   }
 
   componentDidMount() {
-    this.fetchData();
-  }
-
-  fetchData(){
-    fetch('http://localhost:3000/js/data.json')
-      .then((response) => response.json())
-      .then(results => this.setState({ rows: results.data.rows.rows,
-                                       rowTitle: results.data.rows.rowTitle,
-                                       sections: results.data.sections,
-                                       hero: results.data.hero,
-                                       banner: results.data.banners,
-                                       form: results.data.form
-                                    }));
+      fetch('http://localhost:3000/js/data.json')
+        .then((response) => response.json())
+        .then(results => this.setState({ rows: results.data.rows.rows,
+                                         rowTitle: results.data.rows.rowTitle,
+                                         sections: results.data.sections,
+                                         hero: results.data.hero,
+                                         banner: results.data.banners,
+                                         form: results.data.form
+                                      }));
   }
 
   render(){
