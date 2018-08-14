@@ -20,18 +20,29 @@ class App extends Component{
       banner: '',
       form: ''
     }
+    store.subscribe(() => {
+      this.setState({
+        rows: store.getState().data
+      });
+    });
   }
 
   componentDidMount() {
       fetch('http://localhost:3000/js/data.json')
-        .then((response) => response.json())
-        .then(results => this.setState({ rows: results.data.rows.rows,
+        .then(response => response.json())
+        /*.then(results => this.setState({ rows: results.data.rows.rows,
                                          rowTitle: results.data.rows.rowTitle,
                                          sections: results.data.sections,
                                          hero: results.data.hero,
                                          banner: results.data.banners,
                                          form: results.data.form
-                                      }));
+                                      })*/
+        .then(results => {
+          store.dispatch({
+            type: "ADD_ROWS",
+            rows: results.data.rows.rows
+          })
+        });
   }
 
   render(){
