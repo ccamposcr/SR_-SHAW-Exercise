@@ -6,7 +6,7 @@ import Section from './components/Section.jsx';
 import Banner from './components/Banner.jsx';
 import Row from './components/Row.jsx';
 import Form from './components/Form.jsx';
-import store from './store.jsx';
+import store from './stores/store.jsx';
 require('../public/scss/app.scss');
 
 class App extends Component{
@@ -40,6 +40,10 @@ class App extends Component{
         .then(results => {
           store.dispatch({
             type: "ADD_ROWS",
+            rows: results.data.rows.rows
+          })
+          store.dispatch({
+            type: "ADD_ROW_TITLE",
             rows: results.data.rows.rows
           })
         });
