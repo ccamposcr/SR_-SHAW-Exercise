@@ -7,19 +7,19 @@ class Row extends Component{
 
   render(){
     return(
-      <div class="row row--wrapper">
-        <h2 class="row--title">{this.props.title}</h2>
+      <div className="row row--wrapper">
+        <h2 className="row--title">{this.props.title}</h2>
       {this.props.rows.map(function(item, index){
         return (
-          <div class="row--info">
+          <div className="row--info">
             <div className={item.imagePosition}>
-              <div class="column--info">
-                <img alt="Icon" class="row--info-icon" src={item.icon}/>
-                <h2 class="row--info-title">{item.title}</h2>
-                <p class="row--info-description">{item.description}</p>
+              <div className="column--info">
+                <img alt="Icon" className="row--info-icon" src={item.icon}/>
+                <h2 className="row--info-title">{item.title}</h2>
+                <p className="row--info-description">{item.description}</p>
               </div>
-              <div class="column--image">
-                <img alt="Image" class="row--info-img" src={item.image}/>
+              <div className="column--image">
+                <img alt="Image" className="row--info-img" src={item.image}/>
               </div>
             </div>
           </div>

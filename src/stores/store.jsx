@@ -6,7 +6,12 @@ const reducer = (state, action) => {
       ...state,
       data: state.data.concat(action.rows)
     };
-  }
+  }/*else if(action.type === 'ADD_ROW_TITLE'){
+    return {
+      ...state,
+      data: state.data.concat(action.rowTitle)
+    }
+  }*/
 
   return state;
 }

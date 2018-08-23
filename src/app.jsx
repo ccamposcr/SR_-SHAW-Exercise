@@ -44,7 +44,7 @@ class App extends Component{
           })
           store.dispatch({
             type: "ADD_ROW_TITLE",
-            rows: results.data.rows.rows
+            rowTitle: results.data.rows.rowTitle
           })
         });
   }

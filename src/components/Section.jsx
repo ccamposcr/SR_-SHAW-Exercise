@@ -7,14 +7,14 @@ class Section extends Component{
 
   render(){
     return(
-      <div class="section section--wrapper">
+      <div className="section section--wrapper">
       {this.props.sections.map(function(item, index){
         return (
-          <div class="section--info">
-            <img alt="Icon" class="section--info-img" src={item.icon}/>
-            <h2 class="section--info-title">{item.title}</h2>
-            <h4 class="section--info-subtitle">{item.subtitle}</h4>
-            <p class="section--info-description">{item.description}</p>
+          <div className="section--info">
+            <img alt="Icon" className="section--info-img" src={item.icon}/>
+            <h2 className="section--info-title">{item.title}</h2>
+            <h4 className="section--info-subtitle">{item.subtitle}</h4>
+            <p className="section--info-description">{item.description}</p>
           </div>
         );
       })}

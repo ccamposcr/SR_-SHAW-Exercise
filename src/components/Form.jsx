@@ -27,14 +27,14 @@ class Form extends Component{
 
   render(){
     return(
-      <div class="form--wrapper">
-        <h2 class="form--title">{this.props.form.formTitle}</h2>
-        <form onSubmit={this.handleSubmit} class="form">
-          <label for="name">Name:*</label><input id="name" name="name" type="text" class="form--name" value={this.state.name} onChange={this.handleChange}/>
-          <label for="email">Email Address:*</label><input id="email" name="email" type="text" class="form--email" value={this.state.email} onChange={this.handleChange}/>
-          <label for="subject">Subject:*</label><input id="subject" name="subject" type="text" class="form--subject" value={this.state.subject} onChange={this.handleChange}/>
-          <label for="message">Message:*</label><textarea id="message" name="message" value={this.state.message} class="form--message" onChange={this.handleChange}></textarea>
-          <input class="form--submit" type="submit" value="Submit"/>
+      <div className="form--wrapper">
+        <h2 className="form--title">{this.props.form.formTitle}</h2>
+        <form onSubmit={this.handleSubmit} className="form">
+          <label for="name">Name:*</label><input id="name" name="name" type="text" className="form--name" value={this.state.name} onChange={this.handleChange}/>
+          <label for="email">Email Address:*</label><input id="email" name="email" type="text" className="form--email" value={this.state.email} onChange={this.handleChange}/>
+          <label for="subject">Subject:*</label><input id="subject" name="subject" type="text" className="form--subject" value={this.state.subject} onChange={this.handleChange}/>
+          <label for="message">Message:*</label><textarea id="message" name="message" value={this.state.message} className="form--message" onChange={this.handleChange}></textarea>
+          <input className="form--submit" type="submit" value="Submit"/>
         </form>
       </div>
     )

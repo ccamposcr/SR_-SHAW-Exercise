@@ -7,8 +7,8 @@ class Banner extends Component{
 
   render(){
     return(
-      <div class="banner banner--wrapper">
-        <span class="banner--info-description">{this.props.banner.bannersTitle}</span>
+      <div className="banner banner--wrapper">
+        <span className="banner--info-description">{this.props.banner.bannersTitle}</span>
       </div>
     )
   }
